@@ -1,0 +1,1 @@
+function atualizarHora() { document.getElementById('relogio').textContent = new Date().toLocaleString('pt-BR'); } atualizarHora(); setInterval(atualizarHora, 1000);

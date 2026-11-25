@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carrossel com botões - Hospital Esperança</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div><h1>Hospital Esperança</h1><time id="relogio"></time></div></header>
+<main>
+<nav aria-label="Etapas do projeto"><a href="atendimento.html">1. Design inicial</a><a href="atendimento2.html">2. Carrossel com mídia</a><a href="atendimento3.html">3. Carrossel automático</a><a href="atendimento4.html" aria-current="page">4. Carrossel com botões</a><a href="PainelAtendimento.html">5. Funcionalidades</a></nav>
+<div class="stats"><div>Senha atual<strong>S-892</strong></div><div>Guichê<strong>02</strong></div><div>Tempo estimado<strong>3 min</strong></div><div>Próxima senha<strong>S-893</strong></div></div><section><h2>Carrossel com botões</h2><div class="slide"><h3>Orientações de atendimento</h3><video src="orientacoes.mp4" controls muted playsinline preload="metadata" aria-label="Vídeo demonstrativo com orientações de atendimento"></video><p class="note">Vídeo informativo sem áudio.</p></div><div class="slide" hidden><h3>Antes do atendimento</h3><p>Tenha seus documentos em mãos e aguarde a chamada da sua senha.</p></div><div class="slide" hidden><h3>Informações da recepção</h3><p>Procure a recepção para esclarecer dúvidas sobre o atendimento.</p></div><div class="controls"><button id="anterior">Anterior</button><button id="proximo">Próximo</button><button id="pausa">Pausar carrossel</button><span id="indicador" aria-live="polite">1 de 3</span></div></section>
+<footer>Gustavo Koepke Jardim · Projeto acadêmico · Dados demonstrativos</footer>
+</main>
+<script src="relogio.js"></script><script src="carrossel.js" data-automatico="true"></script>
+</body>
+</html>
